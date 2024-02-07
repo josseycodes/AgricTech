@@ -394,3 +394,8 @@ img.mfp-img {
   height: auto !important;
   z-index: -100;
 }
+
+.btn-lemon {
+  background-color: #90EE90; /* Light green */
+  border-color: #90EE90; /* Typically, the border color matches the background */
+}

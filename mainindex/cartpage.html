@@ -3,7 +3,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
-        <title>AgricTech</title>
+        <title>Cart Page</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,14 +21,21 @@
         <!-- script
         ================================================== -->
         <script src="js/modernizr.js"></script>
-
-        
         <style>
-          .btn-lemon {
-          background-color: #19fa19; /* Light green */
-          border-color: #0af30a; /* Typically, the border color matches the background */
-        }
-        </style>
+            body {
+              background-color: #ffffff; /* white background */
+              color: #000000; /* black text */
+            }
+            .green-btn {
+              background-color: #36f162; /* green button */
+              border-color: #30f85e;
+              color: #ffffff; /* white text */
+            }
+            .green-btn:hover {
+              background-color: #30f85e; /* darker green on hover */
+              border-color: #30f85e;
+            }
+          </style>
     </head>
     <body>
         <body data-bs-spy="scroll" data-bs-target="#navbar" data-bs-root-margin="0px 0px -40%" data-bs-smooth-scroll="true" tabindex="0">
@@ -243,36 +250,81 @@
           </div>
           </body>
 
-          <div>
-            <div class="container mt-5">
-             <center> <h2>User Payment Information Form</h2> </center>
-              <div class="row justify-content-center">
-                <div class="col-md-4">
-                  <form>
-                    <div class="form-group mt-3">
-                      <label for="name">Name:</label>
-                      <input type="text" class="form-control" id="name" placeholder="Enter your name">
+          <body>
+            <div class="container mt-5 d-flex justify-content-center"> <!-- Center the container -->
+              <div class="row">
+                <div class="col-md-10"> <!-- Adjust the column width -->
+                  <div class="card text-white mb-3" style="max-width: 450px;"> <!-- Increase the max-width -->
+                    <div class="card-header" style="background-color: #1bf84e;">Your Cart</div>
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <img src="https://via.placeholder.com/150" alt="Product Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                          <h5 class="card-title">Product 1</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nec justo vel vehicula.</p>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text">
+                              <button class="btn btn-outline-secondary" type="button" id="minusBtn">-</button>
+                            </span>
+                            <input type="number" class="form-control text-center" value="2" min="1" aria-label="Quantity" aria-describedby="quantity-addon">
+                            <span class="input-group-text">
+                              <button class="btn btn-outline-secondary" type="button" id="plusBtn">+</button>
+                            </span>
+                          </div>
+                          <p><strong>Price:</strong> $10.00 each</p>
+                          <p><strong>Subtotal:</strong> $20.00</p>
+                          <button class="btn btn-danger rounded-pill">Remove</button>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group mt-3">
-                      <label for="phone">Phone Number:</label>
-                      <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                  </div>
+                  <!-- Repeat the above card for other products -->
+                  <div class="card text-white mb-3" style="max-width: 450px;"> <!-- Increase the max-width -->
+                    <div class="card-body">
+                      <div class="row">
+                        <div class="col-md-3">
+                          <img src="https://via.placeholder.com/150" alt="Product Image" class="img-fluid">
+                        </div>
+                        <div class="col-md-9">
+                          <h5 class="card-title">Product 2</h5>
+                          <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo nec justo vel vehicula.</p>
+                          <div class="input-group mb-3">
+                            <span class="input-group-text">
+                              <button class="btn btn-outline-secondary" type="button" id="minusBtn">-</button>
+                            </span>
+                            <input type="number" class="form-control text-center" value="1" min="1" aria-label="Quantity" aria-describedby="quantity-addon">
+                            <span class="input-group-text">
+                              <button class="btn btn-outline-secondary" type="button" id="plusBtn">+</button>
+                            </span>
+                          </div>
+                          <p><strong>Price:</strong> $15.00 each</p>
+                          <p><strong>Subtotal:</strong> $15.00</p>
+                          <button class="btn btn-danger rounded-pill">Remove</button>
+                        </div>
+                      </div>
                     </div>
-                    <div class="form-group mt-3">
-                      <label for="address">Address:</label>
-                      <textarea class="form-control" id="address" placeholder="Enter your address"></textarea>
+                  </div>
+                  <!-- Add more cards for other products as needed -->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <p class="text-muted text-center">*Promotional message goes here*</p>
                     </div>
-                    <div class="form-group mt-3">
-                      <label for="email">Email:</label>
-                      <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                  </div>
+                  <div class="row">
+                    <div class="col-md-6 text-center">
+                      <button class="btn green-btn rounded-pill">Continue Shopping</button>
                     </div>
-                    <div class="text-center mb-3 mt-3">
-                      <button type="submit" class="btn btn-lemon rounded-pill">Submit</button>
+                    <div class="col-md-6 text-center">
+                      <p>Total: $35.00</p>
+                      <button class="btn btn-warning rounded-pill">Checkout</button>
                     </div>
-                  </form>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
+          </body>
           
         
         
